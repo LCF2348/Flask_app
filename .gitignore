@@ -11,7 +11,7 @@ __pycache__/
 # Ignore the '.idea' directory (if using JetBrains IDEs like PyCharm)
 .idea/
 
-# Ignore Jupyter Notebooks checkpoints
+# Ignore Jupyter Notebooks checkpoints 
 .ipynb_checkpoints/
 
 .vs/

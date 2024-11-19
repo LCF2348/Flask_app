@@ -20,7 +20,7 @@ def test_mongodb_connection():
     """
     try:
         # Try to ping the MongoDB server to check the connection
-        db.command('ping')  # Ping the db to verify the connection
+        db.command('ping')  # Ping the db to verify connection
         success = True
     except ConnectionFailure:
         success = False
@@ -44,10 +44,10 @@ def test_mongodb_write_operation():
     # Query database to verify the product was inserted
     inserted_product = products_collection.find_one({"_id": result.inserted_id})
 
-    # Assert that the inserted product is not None
-    assert inserted_product is not None, "The product should have been inserted into the database"
+    # verify the inserted product is not None  
+    assert inserted_product is not None, "The product shoould have been inserted into the database"
 
-    # Assert that the data matches what was inserted
+    # verify the data matches what was inserted    
     assert inserted_product["name"] == product_data["name"], "The product name does not match"
     assert inserted_product["price"] == product_data["price"], "The product price does not match"
     assert inserted_product["tag"] == product_data["tag"], "The product tag does not match"
