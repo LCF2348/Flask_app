@@ -1,0 +1,17 @@
+.env
+
+venv/
+
+# Ignore other common files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore the '.idea' directory (if using JetBrains IDEs like PyCharm)
+.idea/
+
+# Ignore Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+.vs/
